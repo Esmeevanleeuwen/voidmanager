@@ -1,0 +1,481 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #42845a;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #292778;
+  }
+   
+  
+  
+  .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar-brand {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    .navbar-brand:hover {
+      color: #a8dadc;
+    }
+  
+    .nav-link {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    .nav-link:hover {
+      color: #a8dadc;
+      transition: color 0.3s;
+    }
+  
+    .navbar-toggler {
+      border-color: #ffffff;
+    }
+  
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='%23ffffff' width='30' height='30'%3E%3Cpath stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  
+    .navbar-toggler:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.25rem rgba(168, 218, 220, 0.5);
+    }/* Remove outline from focused hamburger button */
+  .navbar-toggler:focus {
+      box-shadow: none;
+    }
+    
+    .nav-link {
+      display: block;
+      padding: 0.5rem 1.5rem !important;
+      font-size: 17px;
+      font-weight: lighter;
+      color: #292778 ;
+      text-decoration: none;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+      
+  }/* Sticky Navbar */
+  .sticky-top {
+      z-index: 1030;
+    }
+    
+  /* Custom Login Button */
+  .login-btn {
+      background-image: linear-gradient(to right, #42845a, #292778);
+      border: none;
+      color: #ffffff; 
+      padding:6px 39px !important;
+      border-radius: 0px;
+      padding: 0.5rem 1.5rem;
+      transition: background-image 0.3s;
+      margin-top: 5px ;
+    }
+     
+    
+    .navbar-nav .login-btn {
+      margin-left: 1rem;
+    }
+    
+  
+    /* Header Section */
+  /* Header Section */
+  .header-section {
+      height: 690px; /* Set a fixed height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(270deg, #42845A, #292778);
+      background-size: 400% 400%;
+      animation: gradient 20s ease infinite;
+      color: #ffffff;
+    }
+    
+    
+    .header-section .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    
+    .header-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .header-section p {
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .header-section .btn-info {
+      background-color: #ffffff;
+      color: #292778;
+      font-weight: bold;
+      border: none;
+    }
+    
+    .header-section .btn-info:hover {
+      background-color: #f8f9fa;
+      color: #42845A;
+    }
+    
+    /* Moving gradient animation */
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+  
+  
+  
+    /* Custom Buttons */
+  
+  .btn{
+    border-radius: 0px;
+    padding: 0.5rem 1.5rem;
+    transition: background-image 0.3s;
+    margin-top: 5px ;
+  }
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    transition: all 0.3s;
+  }
+  
+  .btn-outline:hover {
+    background-color: #ffffff;
+    color: #42845a;
+  }
+  
+  .btn-filled {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #42845a;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  
+  .btn-filled:hover {
+    background-color: #f8f9fa;
+    color: #292778;
+  }
+  
+  .btn-filled i {
+    margin-left: 0.5rem;
+  }
+  .titel{
+    font-size: 4.5rem !important;
+    font-weight: bolder;
+    margin-bottom: 1rem; 
+  }
+  
+  .text{
+    width: 400px;
+  }
+  
+  .text2{
+    width: 500px;
+    color: #292778;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .titel2{
+    color: #292778;
+    font-weight: bold;
+  }
+   
+  .titel2 > span{
+    color: #5bb84f;
+  }
+  
+  /* Other CSS rules remain unchanged */
+  
+  
+  /* Pricing Section */
+  .pricing-section {
+    padding: 4rem 0;
+  }
+  
+  .pricing-package {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 5px; 
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pakket{
+    font-size: 1.5rem;
+    margin-bottom: 1rem; 
+  }
+  
+  
+  .pricing-package h3 {
+    font-size: 1rem;
+    text-transform: uppercase !important;
+    margin-bottom: 1rem;
+  }
+   
+  
+  
+  /* Responsive styles */
+  @media (max-width: 991.98px) {
+    .contact-info {
+      margin-top: 2rem;
+    }
+  }
+  
+  
+  h4{
+    font-weight: bold;
+  }
+  
+  
+  /* Footer Section */
+  .footer-section {
+    background-color: #292778;
+    color: #ffffff;
+    padding: 4rem 0;
+  }
+  
+  .footer-section p {
+    margin-bottom: 0;
+  }
+  
+  .footer-section a {
+    color: #ffffff;
+  }
+  
+  .footer-logo {
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social-icons {
+    list-style: none;
+    display: flex;
+    margin-top: 2rem;
+    padding: 0;
+  }
+  
+  .footer-social-icons li {
+    margin-right: 1.5rem;
+  }
+  
+  .footer-social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-social-icons a:hover {
+    color: #a8dadc;
+  }
+  
+  /* Sticky Footer */
+  .sticky-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+   
+  
+  .img{
+    margin-top: 100px;
+    margin-left: 50px;
+  } 
+  
+  .logo{
+    width: 30%;
+  }   
+ 
+
+ 
+
+  .my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-left: 169px;
+}
+  /* media query */
+  @media screen and (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    
+  }}
+
+
+  ul {
+    list-style-image: url('path/to/checkmark.png');
+  }
+  
+
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+/* Formulier opmaak */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px; 
+  font-family: 'Poppins', sans-serif;
+}
+
+form input:focus,
+form textarea:focus { 
+  box-shadow: 0 0 5px #aaa;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button[type="submit"] {
+  background-color: #2a4365;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #1a365d;
+}
+
+/* Contactformulier sectie */
+.contact-section {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section .info {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 0 5px #aaa;
+}
+
+.contact-section .info i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #2a4365;
+}
+
+.contact-section .info p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-section .info p:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-section {
+    padding: 50px 0;
+  }
+
+  .contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .contact-section form {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+
+  .contact-section .info {
+    margin-top: 20px;
+  }
+}
+.w-4\/5 {
+  width: 80%;
+}
